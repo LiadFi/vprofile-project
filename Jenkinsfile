@@ -91,9 +91,8 @@ stage("UploadArtifact") {
     }
 }
 
-}
 post {
-       always {
+           always {
             echo 'Slack Notifications.'
             slackSend channel: '#jenkinscicd',
                 color: COLOR_MAP[currentBuild.currentResult],
