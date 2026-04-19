@@ -90,6 +90,8 @@ stage("UploadArtifact") {
         )
     }
 }
+    
+}
 
 post {
            always {
